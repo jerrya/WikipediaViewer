@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Custom css -->
+	<link rel="stylesheet" href="styles.css">
+
+	<title>Wikipedia Viewer</title>
+
+</head>
+<body>
+
+	<div class="container-fluid">
+
+		<div class="row">
+			<div class="col-xs-3"></div>
+
+			<div class="col-xs-6 well" style="margin-top: 150px;">
+				<input type="text" name="wikiInput" class="form-control" id="inputText" placeholder="Enter">
+				
+				<div class="row" style="margin-top: 20px; margin-bottom: 20px;">
+					<div class="col-xs-6">
+						<button class="btn btn-primary btn-lg btn-block" id="inputSearch">Search</button>
+					</div>
+
+					<div class="col-xs-6">
+						<a href="https://en.wikipedia.org/wiki/Special:Random"><button class="btn btn-warning btn-lg btn-block">Random</button></a>
+					</div>
+				</div>
+
+				<p id="errorStatus"></p>
+
+			</div>
+
+			<div class="col-xs-3"></div>
+		</div>
+
+	</div>
+
+	<!-- jQuery includes at the bottom of the page so it loads faster -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+	<!-- Custom javascript includes -->
+	<script src="wiki.js" type="text/javascript"></script>
+</body>
+</html>
