@@ -36,11 +36,11 @@ $(document).ready(function() {
 
                     newElement.append(aTag);
 
-                    $("#errorStatus").append($(newElement));
+                    $("#results").append($(newElement));
                 });
             },
             error: function(data, error) {
-                $('#errorStatus').html("Did not work: " + JSON.stringify(data));
+                $('#results').html("Did not work: " + JSON.stringify(data));
             }
         });
     }
